@@ -1,0 +1,45 @@
+*{
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    width: 100%;
+    display: grid;
+    gap: 3px;
+}
+.contenido{
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'navbar'
+    'sider'
+    'main'
+    'footer';
+}
+.header{
+    grid-area: header;
+    background-color: aqua;
+}
+.nav{
+    grid-area: navbar;
+    background-color: blue;
+}
+.sidebar{
+    grid-area: main;
+    background-color: yellowgreen;
+}
+.main{
+    grid-area: sider;
+    background-color: violet;
+}
+.footer{
+    grid-area: footer;
+    background-color: tomato;
+}
